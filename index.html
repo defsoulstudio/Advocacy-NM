@@ -65,7 +65,7 @@
     }
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
+    html { scroll-behavior: smooth; scroll-padding-top: 90px; }
     body {
       background-color: var(--bg-base);
       color: var(--text-main);
@@ -330,23 +330,25 @@
       cursor: pointer;
     }
 
-    /* Mobile Drawer */
+    /* Mobile Drawer (100% Funcional no Celular) */
     .mobile-drawer {
-      display: none;
+      display: block;
       position: fixed;
       top: 0;
       left: 0;
       right: 0;
       bottom: 0;
-      background: rgba(42, 9, 13, 0.65);
-      backdrop-filter: blur(4px);
-      z-index: 2000;
+      background: rgba(42, 9, 13, 0.7);
+      backdrop-filter: blur(6px);
+      z-index: 2500;
+      visibility: hidden;
       opacity: 0;
       pointer-events: none;
-      transition: opacity 0.3s ease;
+      transition: opacity 0.25s ease, visibility 0.25s ease;
     }
 
     .mobile-drawer.active {
+      visibility: visible;
       opacity: 1;
       pointer-events: auto;
     }
@@ -356,15 +358,18 @@
       top: 0;
       right: 0;
       width: 290px;
+      max-width: 85vw;
       height: 100%;
       background: var(--bg-surface);
       padding: 24px;
       display: flex;
       flex-direction: column;
-      gap: 20px;
-      box-shadow: -4px 0 24px rgba(42, 9, 13, 0.25);
+      gap: 18px;
+      box-shadow: -6px 0 28px rgba(42, 9, 13, 0.35);
       transform: translateX(100%);
-      transition: transform 0.3s ease;
+      transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
     }
 
     .mobile-drawer.active .drawer-content {
@@ -1699,20 +1704,24 @@
   </footer>
 
   <script>
-    // Menu Drawer Mobile
+    // Menu Drawer Mobile com Rolagem Fluida Garantida
     const drawer = document.getElementById('mobileDrawer');
     const openBtn = document.getElementById('openDrawer');
     const closeBtn = document.getElementById('closeDrawer');
     const drawerLinks = document.querySelectorAll('.drawer-link');
 
     function openMobileMenu() {
+      if (!drawer) return;
       drawer.classList.add('active');
       document.body.style.overflow = 'hidden';
+      document.body.style.touchAction = 'none';
     }
 
     function closeMobileMenu() {
+      if (!drawer) return;
       drawer.classList.remove('active');
       document.body.style.overflow = '';
+      document.body.style.touchAction = '';
     }
 
     if (openBtn) openBtn.addEventListener('click', openMobileMenu);
@@ -1722,8 +1731,34 @@
         if (e.target === drawer) closeMobileMenu();
       });
     }
+
+    // Ação ao clicar em cada link do menu no celular
     drawerLinks.forEach(link => {
-      link.addEventListener('click', closeMobileMenu);
+      link.addEventListener('click', (e) => {
+        const href = link.getAttribute('href');
+        if (href && href.startsWith('#')) {
+          e.preventDefault();
+          closeMobileMenu();
+          
+          const targetId = href.substring(1);
+          const targetElement = document.getElementById(targetId);
+          if (targetElement) {
+            // Aguarda o menu fechar para desbloquear o scroll e rolar suavemente até a seção
+            setTimeout(() => {
+              const headerHeight = 90;
+              const elementPosition = targetElement.getBoundingClientRect().top;
+              const offsetPosition = elementPosition + window.pageYOffset - headerHeight;
+              
+              window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+              });
+            }, 120);
+          }
+        } else {
+          closeMobileMenu();
+        }
+      });
     });
 
     // Envio do formulário de triagem para o WhatsApp
