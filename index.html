@@ -5,24 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <title>Dra. Nathália Moreira | Advocacia & Consultoria Jurídica — OAB/SP 510.527</title>
-  <meta name="description" content="Advocacia especializada em Direito Penal, Execução Penal, Cível e Trabalhista. Atendimento presencial em Caçapava/SP e online para todo o Brasil. OAB/SP 510.527.">
+  <meta name="description" content="Advocacia Cível, Trabalhista e Penal. Plantão 24 horas para flagrantes e audiências de custódia. Atendimento presencial em Caçapava/SP e online para todo o Brasil. OAB/SP 510.527.">
   
-  <!-- Metatags para Exibição da Logo ao Compartilhar o Link (WhatsApp, Instagram, LinkedIn, etc.) -->
+  <!-- Metatags para Exibição da Logo ao Compartilhar o Link (WhatsApp, Instagram, etc.) -->
   <meta property="og:locale" content="pt_BR">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Dra. Nathália Moreira | Advocacia — OAB/SP 510.527">
-  <meta property="og:description" content="Defesa técnica, presença constante e estratégia jurídica clara. Atendimento presencial em Caçapava/SP e online para todo o Brasil.">
+  <meta property="og:description" content="Advocacia Cível, Trabalhista e Penal. Plantão 24 Horas para Prisões em Flagrante. Atendimento presencial e online.">
   <meta property="og:image" content="logo.jpg">
-  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:type" content="image/jpeg">
   <meta property="og:image:width" content="600">
   <meta property="og:image:height" content="600">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Dra. Nathália Moreira | Advocacia — OAB/SP 510.527">
-  <meta name="twitter:description" content="Advocacia especializada em Direito Penal, Execução Penal, Cível e Trabalhista.">
+  <meta name="twitter:description" content="Advocacia Cível, Trabalhista e Penal. Plantão de Flagrantes 24h.">
   <meta name="twitter:image" content="logo.jpg">
   
-  <!-- Favicon (Ícone da aba do navegador) -->
-  <link rel="icon" type="image/png" href="logo.jpg">
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="logo.jpg">
   <link rel="apple-touch-icon" href="logo.jpg">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,10 +31,12 @@
   
   <style>
     :root {
-      /* Paleta Nobre Vinho & Ouro */
-      --wine-dark: #2A090D;
-      --wine: #56161D;
-      --wine-medium: #6F1E26;
+      /* Identidade Principal: Vinho Nobre e Ouro */
+      --wine-deepest: #1B0507;
+      --wine-dark: #27080B;
+      --wine-primary: #451016;
+      --wine-rich: #58161E;
+      --wine-medium: #701D27;
       --wine-light: #FBF4F5;
       --wine-tint: #F3E6E8;
       
@@ -45,20 +47,21 @@
       --gold-light: #F8F4EC;
       --gold-border: rgba(197, 160, 89, 0.45);
 
-      --bg-base: #FAF9F7;
+      --bg-base: #FAF8F5;
       --bg-surface: #FFFFFF;
-      --bg-muted: #F3EFEA;
+      --bg-muted: #F2ECE6;
       
       --text-main: #212529;
       --text-muted: #585F66;
       --text-light: #FAF8F5;
+      --text-on-wine: #F7EFE8;
       
-      --border: #E8E2D8;
-      --border-wine: rgba(86, 22, 29, 0.15);
+      --border: #E8E0D5;
+      --border-wine: rgba(69, 16, 22, 0.18);
       
-      --shadow-sm: 0 2px 8px rgba(42, 9, 13, 0.05);
-      --shadow-md: 0 10px 30px rgba(42, 9, 13, 0.08);
-      --shadow-lg: 0 20px 50px rgba(42, 9, 13, 0.15);
+      --shadow-sm: 0 2px 8px rgba(39, 8, 11, 0.06);
+      --shadow-md: 0 10px 30px rgba(39, 8, 11, 0.12);
+      --shadow-lg: 0 20px 50px rgba(27, 5, 7, 0.2);
       
       --radius-sm: 4px;
       --radius-md: 8px;
@@ -77,28 +80,14 @@
 
     a { color: inherit; text-decoration: none; }
     img { max-width: 100%; display: block; }
-    ::selection { background: var(--wine); color: #FFFFFF; }
+    ::selection { background: var(--wine-primary); color: #FFFFFF; }
 
-    /* Tipografia de Prestígio */
+    /* Tipografia Nobre */
     h1, h2, h3, h4, .serif-font {
       font-family: 'Cormorant Garamond', Georgia, serif;
       font-weight: 600;
       color: var(--text-main);
       line-height: 1.2;
-    }
-
-    .eyebrow {
-      display: inline-block;
-      font-size: 0.8rem;
-      font-weight: 700;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--wine);
-      background: var(--wine-tint);
-      padding: 5px 14px;
-      border-radius: var(--radius-sm);
-      margin-bottom: 16px;
-      border-left: 3px solid var(--wine);
     }
 
     .container {
@@ -107,12 +96,12 @@
       padding: 0 clamp(16px, 4vw, 36px);
     }
 
-    /* Top Bar Institucional Vinho */
+    /* Top Bar Institucional em Vinho Escuro */
     .top-bar {
-      background-color: var(--wine-dark);
+      background-color: var(--wine-deepest);
       color: var(--gold-text);
-      font-size: 0.8rem;
-      padding: 8px 0;
+      font-size: 0.82rem;
+      padding: 9px 0;
       border-bottom: 1px solid rgba(197, 160, 89, 0.25);
     }
 
@@ -121,25 +110,47 @@
       justify-content: space-between;
       align-items: center;
       flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .top-bar-emergency {
+      display: inline-flex;
+      align-items: center;
       gap: 8px;
-    }
-
-    .top-bar-badge {
-      color: var(--gold-bright);
+      background: rgba(197, 160, 89, 0.15);
+      border: 1px solid var(--gold);
+      padding: 2px 10px;
+      border-radius: 14px;
       font-weight: 700;
+      color: var(--gold-bright);
+      font-size: 0.78rem;
     }
 
-    /* Header Principal & Navegação Uniforme */
+    .pulse-dot {
+      width: 8px;
+      height: 8px;
+      background-color: #E53E3E;
+      border-radius: 50%;
+      box-shadow: 0 0 8px #E53E3E;
+      animation: pulse 1.6s infinite;
+    }
+
+    @keyframes pulse {
+      0% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(0.85); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+
+    /* Header Principal em Vinho Nobre */
     header {
       position: sticky;
       top: 0;
       left: 0;
       right: 0;
       z-index: 1000;
-      background: rgba(255, 255, 255, 0.98);
-      backdrop-filter: blur(12px);
-      border-bottom: 2px solid var(--wine-tint);
-      box-shadow: 0 2px 14px rgba(86, 22, 29, 0.05);
+      background: linear-gradient(135deg, var(--wine-dark) 0%, var(--wine-primary) 100%);
+      border-bottom: 2px solid var(--gold);
+      box-shadow: 0 4px 20px rgba(27, 5, 7, 0.35);
     }
 
     .nav-container {
@@ -153,34 +164,20 @@
     .brand {
       display: flex;
       align-items: center;
-      gap: 12px;
+      gap: 14px;
       flex-shrink: 0;
     }
 
-    /* Logo Image ou Vetor Fallback */
+    /* Logo Oficial */
     .brand-logo-img {
-      width: 48px;
-      height: 48px;
+      width: 50px;
+      height: 50px;
       object-fit: cover;
       object-position: center;
       border-radius: var(--radius-sm);
-      background: #4A0E17;
+      background: var(--wine-deepest);
       border: 1.5px solid var(--gold);
-      padding: 0;
-      box-shadow: 0 2px 8px rgba(86, 22, 29, 0.25);
-    }
-
-    .brand-emblem-fallback {
-      width: 48px;
-      height: 48px;
-      background: linear-gradient(135deg, var(--wine) 0%, var(--wine-dark) 100%);
-      border-radius: var(--radius-sm);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border: 1px solid var(--gold);
-      box-shadow: 0 2px 8px rgba(86, 22, 29, 0.25);
-      flex-shrink: 0;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
     }
 
     .brand-title {
@@ -188,7 +185,7 @@
       font-size: 1.45rem;
       font-weight: 700;
       letter-spacing: -0.01em;
-      color: var(--wine);
+      color: #FFFFFF;
       line-height: 1.1;
       white-space: nowrap;
     }
@@ -198,23 +195,23 @@
       font-weight: 600;
       letter-spacing: 0.08em;
       text-transform: uppercase;
-      color: var(--text-muted);
+      color: var(--gold-bright);
       margin-top: 2px;
       white-space: nowrap;
     }
 
-    /* Navegação Desktop: Uniforme, sem quebra de linhas */
+    /* Navegação Desktop com contraste sobre o fundo vinho */
     nav.desktop-nav {
       display: flex;
       align-items: center;
-      gap: clamp(14px, 1.8vw, 26px);
+      gap: clamp(14px, 1.8vw, 24px);
       flex-shrink: 0;
     }
 
     nav.desktop-nav .nav-link {
       font-size: 0.94rem;
       font-weight: 600;
-      color: var(--text-main) !important;
+      color: var(--text-on-wine) !important;
       position: relative;
       padding: 8px 0;
       white-space: nowrap;
@@ -223,7 +220,7 @@
     }
 
     nav.desktop-nav .nav-link:hover {
-      color: var(--wine) !important;
+      color: var(--gold-bright) !important;
     }
 
     nav.desktop-nav .nav-link::after {
@@ -233,7 +230,7 @@
       left: 0;
       width: 0;
       height: 2px;
-      background: var(--wine);
+      background: var(--gold);
       transition: width 0.25s ease;
     }
 
@@ -241,96 +238,47 @@
       width: 100%;
     }
 
-    /* Botão Falar no WhatsApp com Letras Douradas e Alto Contraste */
+    /* Botão de Contato com Destaque Dourado/Vinho */
     .btn-nav-cta {
       display: inline-flex !important;
       align-items: center;
       gap: 8px;
-      background: linear-gradient(135deg, var(--wine) 0%, var(--wine-medium) 100%) !important;
-      color: var(--gold-text) !important;
+      background: linear-gradient(135deg, var(--gold) 0%, var(--gold-hover) 100%) !important;
+      color: var(--wine-deepest) !important;
       font-size: 0.88rem !important;
       font-weight: 700 !important;
-      letter-spacing: 0.03em;
+      letter-spacing: 0.02em;
       padding: 11px 20px !important;
       border-radius: var(--radius-sm);
-      border: 1.5px solid var(--gold) !important;
-      box-shadow: 0 4px 14px rgba(86, 22, 29, 0.28);
+      border: 1px solid var(--gold-bright) !important;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
       white-space: nowrap;
       transition: all 0.25s ease !important;
       text-decoration: none;
     }
 
-    .btn-nav-cta svg {
-      color: var(--gold-bright);
-      flex-shrink: 0;
-      transition: transform 0.25s ease;
-    }
-
     .btn-nav-cta:hover {
-      background: var(--wine-dark) !important;
-      color: #FFFFFF !important;
-      border-color: var(--gold-bright) !important;
+      background: var(--gold-bright) !important;
       transform: translateY(-2px);
-      box-shadow: 0 6px 18px rgba(86, 22, 29, 0.4);
+      box-shadow: 0 6px 18px rgba(229, 195, 120, 0.4);
     }
 
-    .btn-nav-cta:hover svg {
-      transform: scale(1.1);
-    }
-
-    /* Botões Gerais */
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      font-size: 0.92rem;
-      font-weight: 700;
-      padding: 13px 26px;
-      border-radius: var(--radius-sm);
-      transition: all 0.25s ease;
-      cursor: pointer;
-      text-align: center;
-      border: 1px solid transparent;
-    }
-
-    .btn-wine {
-      background-color: var(--wine);
-      color: var(--gold-text);
-      border: 1px solid var(--gold);
-      box-shadow: 0 4px 14px rgba(86, 22, 29, 0.25);
-    }
-
-    .btn-wine:hover {
-      background-color: var(--wine-dark);
-      color: #FFFFFF;
-      transform: translateY(-2px);
-      box-shadow: 0 6px 20px rgba(86, 22, 29, 0.35);
-    }
-
-    .btn-wine-outline {
-      background-color: transparent;
-      color: var(--wine);
-      border: 1.5px solid var(--wine);
-    }
-
-    .btn-wine-outline:hover {
-      background-color: var(--wine);
-      color: var(--gold-text);
-      transform: translateY(-2px);
+    .btn-nav-cta svg {
+      color: var(--wine-deepest);
+      flex-shrink: 0;
     }
 
     .mobile-menu-btn {
       display: none;
-      background: var(--wine-light);
-      border: 1px solid var(--border-wine);
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid var(--gold);
       border-radius: var(--radius-sm);
       padding: 8px;
-      color: var(--wine);
+      color: var(--gold-bright);
       cursor: pointer;
     }
 
-    /* Mobile Drawer (100% Funcional no Celular) */
+    /* Drawer Mobile */
     .mobile-drawer {
       display: block;
       position: fixed;
@@ -338,7 +286,7 @@
       left: 0;
       right: 0;
       bottom: 0;
-      background: rgba(42, 9, 13, 0.7);
+      background: rgba(27, 5, 7, 0.75);
       backdrop-filter: blur(6px);
       z-index: 2500;
       visibility: hidden;
@@ -360,12 +308,13 @@
       width: 290px;
       max-width: 85vw;
       height: 100%;
-      background: var(--bg-surface);
+      background: var(--wine-dark);
+      border-left: 2px solid var(--gold);
       padding: 24px;
       display: flex;
       flex-direction: column;
       gap: 18px;
-      box-shadow: -6px 0 28px rgba(42, 9, 13, 0.35);
+      box-shadow: -6px 0 28px rgba(0, 0, 0, 0.5);
       transform: translateX(100%);
       transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
       overflow-y: auto;
@@ -380,8 +329,16 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      border-bottom: 2px solid var(--wine-tint);
+      border-bottom: 1px solid rgba(197, 160, 89, 0.3);
       padding-bottom: 14px;
+    }
+
+    .drawer-header span {
+      color: var(--gold-bright);
+      font-weight: 700;
+      font-size: 0.85rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
     }
 
     .drawer-close {
@@ -389,34 +346,47 @@
       border: none;
       font-size: 1.8rem;
       cursor: pointer;
-      color: var(--wine);
+      color: var(--gold);
       line-height: 1;
     }
 
     .drawer-nav {
       display: flex;
       flex-direction: column;
-      gap: 16px;
+      gap: 14px;
     }
 
     .drawer-nav a {
       font-size: 1.05rem;
       font-weight: 600;
-      color: var(--text-main);
+      color: var(--text-on-wine);
       padding: 8px 0;
-      border-bottom: 1px solid var(--border);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
     }
 
     .drawer-nav a:hover {
-      color: var(--wine);
+      color: var(--gold-bright);
     }
 
-    /* Hero Section */
+    /* HERO SECTION EM VINHO NOBRE PRINCIPAL */
     .hero {
       position: relative;
-      padding: clamp(60px, 8vw, 96px) 0 clamp(48px, 6vw, 76px);
-      background: linear-gradient(180deg, #FFFFFF 0%, var(--bg-base) 100%);
-      border-bottom: 1px solid var(--border);
+      padding: clamp(64px, 8vw, 100px) 0 clamp(54px, 7vw, 84px);
+      background: linear-gradient(175deg, var(--wine-dark) 0%, var(--wine-primary) 50%, var(--wine-deepest) 100%);
+      color: #FFFFFF;
+      border-bottom: 2px solid var(--gold);
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -20%;
+      right: -10%;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(197, 160, 89, 0.1) 0%, transparent 70%);
+      pointer-events: none;
     }
 
     .hero-grid {
@@ -424,27 +394,47 @@
       grid-template-columns: 1.25fr 0.8fr;
       gap: clamp(32px, 5vw, 64px);
       align-items: center;
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero .eyebrow {
+      display: inline-block;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--gold-text);
+      background: rgba(255, 255, 255, 0.08);
+      padding: 6px 16px;
+      border-radius: var(--radius-sm);
+      margin-bottom: 18px;
+      border-left: 3px solid var(--gold);
+      border: 1px solid rgba(197, 160, 89, 0.3);
     }
 
     .hero h1 {
-      font-size: clamp(2.4rem, 4.4vw, 3.6rem);
+      font-size: clamp(2.4rem, 4.4vw, 3.7rem);
       letter-spacing: -0.01em;
       margin-bottom: 20px;
       font-weight: 700;
+      color: #FFFFFF;
+      line-height: 1.15;
     }
 
     .hero h1 em {
       font-style: italic;
-      color: var(--wine);
+      color: var(--gold-bright);
       font-weight: 600;
     }
 
     .hero-lead {
       font-size: clamp(1.05rem, 1.35vw, 1.18rem);
-      color: var(--text-muted);
+      color: var(--text-on-wine);
       margin-bottom: 34px;
       max-width: 52ch;
       line-height: 1.7;
+      opacity: 0.95;
     }
 
     .hero-actions {
@@ -454,54 +444,94 @@
       margin-bottom: 44px;
     }
 
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      font-size: 0.92rem;
+      font-weight: 700;
+      padding: 13px 26px;
+      border-radius: var(--radius-sm);
+      transition: all 0.25s ease;
+      cursor: pointer;
+      text-align: center;
+    }
+
+    .btn-gold {
+      background: linear-gradient(135deg, var(--gold) 0%, var(--gold-hover) 100%);
+      color: var(--wine-deepest);
+      border: 1px solid var(--gold-bright);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+    }
+
+    .btn-gold:hover {
+      background: var(--gold-bright);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(229, 195, 120, 0.4);
+    }
+
+    .btn-outline-light {
+      background: rgba(255, 255, 255, 0.05);
+      color: #FFFFFF;
+      border: 1.5px solid rgba(255, 255, 255, 0.35);
+    }
+
+    .btn-outline-light:hover {
+      background: rgba(255, 255, 255, 0.15);
+      border-color: #FFFFFF;
+      transform: translateY(-2px);
+    }
+
     .hero-metrics {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 16px;
+      gap: 14px;
       padding-top: 28px;
-      border-top: 1px solid var(--border);
+      border-top: 1px solid rgba(255, 255, 255, 0.15);
     }
 
     .metric-card {
-      background: #FFFFFF;
-      border: 1px solid var(--border);
-      border-top: 3px solid var(--wine);
-      padding: 14px 18px;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(197, 160, 89, 0.3);
+      border-top: 3px solid var(--gold);
+      padding: 14px 16px;
       border-radius: var(--radius-sm);
-      box-shadow: var(--shadow-sm);
+      backdrop-filter: blur(4px);
     }
 
     .metric-card .val {
       font-family: 'Cormorant Garamond', serif;
       font-size: 1.55rem;
       font-weight: 700;
-      color: var(--wine);
+      color: var(--gold-bright);
       display: block;
       line-height: 1.1;
     }
 
     .metric-card .desc {
       font-size: 0.78rem;
-      color: var(--text-muted);
+      color: var(--text-on-wine);
       margin-top: 4px;
       font-weight: 600;
     }
 
-    /* Card Lateral Hero com tema vinho e dourado */
+    /* Card Lateral Hero */
     .hero-presentation-card {
       background: #FFFFFF;
-      border: 1px solid var(--border);
+      color: var(--text-main);
+      border: 2px solid var(--gold);
       border-radius: var(--radius-md);
       overflow: hidden;
-      box-shadow: var(--shadow-md);
+      box-shadow: var(--shadow-lg);
       position: relative;
     }
 
     .hero-card-header {
-      background: linear-gradient(135deg, var(--wine) 0%, var(--wine-dark) 100%);
+      background: var(--wine-dark);
       color: #FFFFFF;
-      padding: 24px;
-      border-bottom: 3px solid var(--gold);
+      padding: 22px 24px;
+      border-bottom: 2px solid var(--gold);
     }
 
     .hero-card-header h3 {
@@ -512,10 +542,10 @@
 
     .hero-card-header span {
       font-size: 0.8rem;
-      color: var(--gold-text);
+      color: var(--gold-bright);
       letter-spacing: 0.08em;
       text-transform: uppercase;
-      font-weight: 600;
+      font-weight: 700;
     }
 
     .hero-card-body {
@@ -523,6 +553,21 @@
       display: flex;
       flex-direction: column;
       gap: 16px;
+    }
+
+    /* Destaque 24h no Card */
+    .hero-alert-24h {
+      background: #FFF5F5;
+      border: 1.5px solid #FEB2B2;
+      border-left: 4px solid #E53E3E;
+      padding: 12px 14px;
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: #9B2C2C;
     }
 
     .hero-feature-item {
@@ -539,11 +584,11 @@
     }
 
     .hero-feature-icon {
-      width: 34px;
-      height: 34px;
+      width: 36px;
+      height: 36px;
       border-radius: var(--radius-sm);
-      background: var(--wine-tint);
-      color: var(--wine);
+      background: var(--wine-light);
+      color: var(--wine-primary);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -553,8 +598,8 @@
     .hero-feature-text strong {
       display: block;
       font-size: 0.92rem;
-      color: var(--text-main);
-      font-weight: 600;
+      color: var(--wine-primary);
+      font-weight: 700;
     }
 
     .hero-feature-text span {
@@ -573,10 +618,24 @@
       text-align: center;
     }
 
+    .section-head .eyebrow {
+      display: inline-block;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--wine-primary);
+      background: var(--wine-tint);
+      padding: 5px 14px;
+      border-radius: var(--radius-sm);
+      margin-bottom: 14px;
+      border-left: 3px solid var(--wine-primary);
+    }
+
     .section-head h2 {
       font-size: clamp(2.1rem, 3.4vw, 2.8rem);
       margin-bottom: 14px;
-      color: var(--text-main);
+      color: var(--wine-primary);
     }
 
     .section-head p {
@@ -584,7 +643,7 @@
       font-size: 1.05rem;
     }
 
-    /* Seção Sobre com a Logo Oficial NM */
+    /* SEÇÃO SOBRE O ESCRITÓRIO */
     .about-section {
       background: #FFFFFF;
       border-bottom: 1px solid var(--border);
@@ -599,8 +658,8 @@
 
     .portrait-frame {
       position: relative;
-      background: linear-gradient(155deg, var(--wine-light) 0%, #FFFFFF 100%);
-      border: 2px solid var(--wine-tint);
+      background: linear-gradient(155deg, var(--wine-dark) 0%, var(--wine-primary) 100%);
+      border: 2px solid var(--gold);
       border-radius: var(--radius-md);
       padding: 36px 24px;
       text-align: center;
@@ -610,13 +669,14 @@
       align-items: center;
       justify-content: center;
       min-height: 440px;
+      color: #FFFFFF;
     }
 
     .portrait-frame .corner {
       position: absolute;
       width: 20px;
       height: 20px;
-      border: 2px solid var(--gold);
+      border: 2px solid var(--gold-bright);
     }
     .portrait-frame .corner.tl { top: 12px; left: 12px; border-right: none; border-bottom: none; }
     .portrait-frame .corner.tr { top: 12px; right: 12px; border-left: none; border-bottom: none; }
@@ -630,7 +690,7 @@
       background: #4A0E17;
       border-radius: var(--radius-md);
       border: 2.5px solid var(--gold);
-      box-shadow: 0 8px 28px rgba(74, 14, 23, 0.35);
+      box-shadow: 0 8px 28px rgba(0, 0, 0, 0.4);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -650,24 +710,25 @@
 
     .portrait-frame h3 {
       font-size: 1.55rem;
-      color: var(--wine);
+      color: #FFFFFF;
       margin-bottom: 4px;
     }
 
     .portrait-frame p {
       font-size: 0.88rem;
-      color: var(--text-muted);
+      color: var(--gold-bright);
       margin-bottom: 16px;
+      font-weight: 600;
     }
 
     .portrait-tag {
       display: inline-block;
-      background: var(--wine);
+      background: rgba(255, 255, 255, 0.1);
       color: var(--gold-text);
       border: 1px solid var(--gold);
       padding: 6px 18px;
       border-radius: 20px;
-      font-size: 0.78rem;
+      font-size: 0.8rem;
       font-weight: 700;
       letter-spacing: 0.05em;
     }
@@ -675,6 +736,7 @@
     .about-text h2 {
       font-size: clamp(2rem, 3.2vw, 2.6rem);
       margin-bottom: 20px;
+      color: var(--wine-primary);
     }
 
     .about-text p {
@@ -697,7 +759,7 @@
       padding: 16px 20px;
       background: var(--wine-light);
       border: 1px solid var(--border-wine);
-      border-left: 4px solid var(--wine);
+      border-left: 4px solid var(--wine-primary);
       border-radius: var(--radius-sm);
       transition: all 0.2s ease;
     }
@@ -710,7 +772,7 @@
     .credential-card svg {
       width: 24px;
       height: 24px;
-      color: var(--wine);
+      color: var(--wine-primary);
       flex-shrink: 0;
       margin-top: 2px;
     }
@@ -718,7 +780,7 @@
     .credential-card strong {
       display: block;
       font-size: 0.95rem;
-      color: var(--wine);
+      color: var(--wine-primary);
       font-weight: 700;
     }
 
@@ -727,7 +789,7 @@
       color: var(--text-muted);
     }
 
-    /* Seção Áreas de Atuação */
+    /* SEÇÃO ÁREAS DE ATUAÇÃO */
     .areas-section {
       background: var(--bg-base);
       border-bottom: 1px solid var(--border);
@@ -742,7 +804,7 @@
     .area-card {
       background: var(--bg-surface);
       border: 1px solid var(--border);
-      border-top: 4px solid var(--wine);
+      border-top: 4px solid var(--wine-primary);
       border-radius: var(--radius-md);
       padding: 36px 28px;
       box-shadow: var(--shadow-sm);
@@ -758,9 +820,10 @@
       box-shadow: var(--shadow-md);
     }
 
-    .area-card.featured {
+    /* Card Penal Especial com Destaque para Flagrante 24h e Pós-Graduação */
+    .area-card.penal-card {
       background: linear-gradient(165deg, #FFFFFF 0%, var(--wine-light) 100%);
-      border: 2px solid var(--wine);
+      border: 2px solid var(--wine-primary);
       box-shadow: var(--shadow-md);
     }
 
@@ -768,41 +831,63 @@
       position: absolute;
       top: -14px;
       right: 24px;
-      background: var(--wine);
+      background: var(--wine-primary);
       color: var(--gold-text);
       font-size: 0.72rem;
       font-weight: 700;
-      letter-spacing: 0.1em;
+      letter-spacing: 0.08em;
       text-transform: uppercase;
       padding: 5px 14px;
       border-radius: 14px;
       border: 1px solid var(--gold);
-      box-shadow: 0 2px 6px rgba(86, 22, 29, 0.3);
+      box-shadow: 0 2px 6px rgba(69, 16, 22, 0.3);
+    }
+
+    .area-badge.badge-urgent {
+      background: #C53030;
+      border-color: #FEB2B2;
+      color: #FFFFFF;
     }
 
     .area-icon {
       width: 52px;
       height: 52px;
-      background: var(--wine);
+      background: var(--wine-primary);
       color: var(--gold-bright);
       border-radius: var(--radius-sm);
       display: flex;
       align-items: center;
       justify-content: center;
       margin-bottom: 22px;
-      box-shadow: 0 4px 10px rgba(86, 22, 29, 0.2);
+      box-shadow: 0 4px 10px rgba(69, 16, 22, 0.25);
     }
 
     .area-card h3 {
       font-size: 1.55rem;
       margin-bottom: 12px;
-      color: var(--wine);
+      color: var(--wine-primary);
     }
 
     .area-desc {
       font-size: 0.94rem;
       color: var(--text-muted);
-      margin-bottom: 22px;
+      margin-bottom: 18px;
+    }
+
+    /* Caixa de Destaque para o Plantão 24h no Penal */
+    .penal-flagrante-box {
+      background: #FFF5F5;
+      border: 1px solid #FEB2B2;
+      border-left: 3px solid #E53E3E;
+      padding: 10px 12px;
+      border-radius: var(--radius-sm);
+      margin-bottom: 18px;
+      font-size: 0.82rem;
+      color: #9B2C2C;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 8px;
     }
 
     .service-checklist {
@@ -826,14 +911,14 @@
     .service-checklist li svg {
       width: 16px;
       height: 16px;
-      color: var(--wine);
+      color: var(--wine-primary);
       flex-shrink: 0;
       margin-top: 3px;
     }
 
-    /* Faixa de Citação Vinho */
+    /* FAIXA INSTITUCIONAL EM VINHO */
     .quote-band {
-      background: linear-gradient(135deg, var(--wine-dark) 0%, var(--wine) 60%, var(--wine-medium) 100%);
+      background: linear-gradient(135deg, var(--wine-dark) 0%, var(--wine-primary) 60%, var(--wine-medium) 100%);
       color: var(--text-light);
       padding: clamp(70px, 9vw, 100px) 0;
       text-align: center;
@@ -862,7 +947,7 @@
       color: var(--gold-text);
     }
 
-    /* Seção de Diferenciais */
+    /* SEÇÃO DIFERENCIAIS */
     .pillars-section {
       background: #FFFFFF;
       border-bottom: 1px solid var(--border);
@@ -886,7 +971,7 @@
       font-family: 'Cormorant Garamond', serif;
       font-size: 2.2rem;
       font-weight: 700;
-      color: var(--wine);
+      color: var(--wine-primary);
       margin-bottom: 8px;
       line-height: 1;
     }
@@ -894,7 +979,7 @@
     .pillar-card h3 {
       font-size: 1.35rem;
       margin-bottom: 10px;
-      color: var(--wine);
+      color: var(--wine-primary);
     }
 
     .pillar-card p {
@@ -902,7 +987,7 @@
       color: var(--text-muted);
     }
 
-    /* Seção FAQ */
+    /* SEÇÃO FAQ */
     .faq-section {
       background: var(--bg-base);
       border-bottom: 1px solid var(--border);
@@ -919,14 +1004,14 @@
     .faq-item {
       background: #FFFFFF;
       border: 1px solid var(--border);
-      border-left: 3px solid var(--wine);
+      border-left: 3px solid var(--wine-primary);
       border-radius: var(--radius-sm);
       overflow: hidden;
       transition: all 0.2s ease;
     }
 
     .faq-item[open] {
-      border-color: var(--wine);
+      border-color: var(--wine-primary);
       box-shadow: var(--shadow-sm);
     }
 
@@ -951,7 +1036,7 @@
       content: '+';
       font-size: 1.4rem;
       font-weight: 600;
-      color: var(--wine);
+      color: var(--wine-primary);
     }
 
     .faq-item[open] summary::after {
@@ -967,7 +1052,7 @@
       padding-top: 14px;
     }
 
-    /* Seção de Contato e Localização */
+    /* SEÇÃO CONTATO COM PLANTÃO 24H */
     .contact-section {
       background: #FFFFFF;
     }
@@ -981,12 +1066,12 @@
     .contact-info-card {
       display: flex;
       flex-direction: column;
-      gap: 28px;
+      gap: 24px;
     }
 
     .info-group h4 {
       font-size: 1.25rem;
-      color: var(--wine);
+      color: var(--wine-primary);
       margin-bottom: 8px;
     }
 
@@ -994,6 +1079,43 @@
       color: var(--text-muted);
       font-size: 0.95rem;
       line-height: 1.6;
+    }
+
+    /* Destaque Nitidamente Vermelho/Vinho para Plantão 24h */
+    .emergency-hours-card {
+      background: linear-gradient(135deg, var(--wine-dark) 0%, var(--wine-primary) 100%);
+      color: #FFFFFF;
+      padding: 20px 22px;
+      border-radius: var(--radius-md);
+      border: 1.5px solid var(--gold);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .emergency-hours-card .badge-24h {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: #C53030;
+      color: #FFFFFF;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 3px 10px;
+      border-radius: 12px;
+      margin-bottom: 10px;
+    }
+
+    .emergency-hours-card h4 {
+      font-size: 1.2rem;
+      color: var(--gold-bright);
+      margin-bottom: 6px;
+    }
+
+    .emergency-hours-card p {
+      font-size: 0.88rem;
+      color: var(--text-on-wine);
+      line-height: 1.55;
     }
 
     .hours-table {
@@ -1012,14 +1134,14 @@
     .hours-table td:last-child {
       text-align: right;
       font-weight: 700;
-      color: var(--wine);
+      color: var(--wine-primary);
     }
 
     /* Formulário com Moldura Vinho */
     .contact-form-box {
       background: var(--wine-light);
       border: 1px solid var(--border-wine);
-      border-top: 4px solid var(--wine);
+      border-top: 4px solid var(--wine-primary);
       border-radius: var(--radius-md);
       padding: clamp(24px, 5vw, 38px);
       box-shadow: var(--shadow-sm);
@@ -1027,7 +1149,7 @@
 
     .contact-form-box h3 {
       font-size: 1.55rem;
-      color: var(--wine);
+      color: var(--wine-primary);
       margin-bottom: 8px;
     }
 
@@ -1063,8 +1185,8 @@
     }
 
     .form-control:focus {
-      border-color: var(--wine);
-      box-shadow: 0 0 0 3px rgba(86, 22, 29, 0.12);
+      border-color: var(--wine-primary);
+      box-shadow: 0 0 0 3px rgba(69, 16, 22, 0.15);
     }
 
     textarea.form-control {
@@ -1085,9 +1207,23 @@
     .form-privacy-note svg {
       width: 16px;
       height: 16px;
-      color: var(--wine);
+      color: var(--wine-primary);
       flex-shrink: 0;
       margin-top: 2px;
+    }
+
+    .btn-wine-submit {
+      width: 100%;
+      background: linear-gradient(135deg, var(--wine-primary) 0%, var(--wine-dark) 100%);
+      color: var(--gold-text);
+      border: 1px solid var(--gold);
+      box-shadow: 0 4px 14px rgba(69, 16, 22, 0.35);
+    }
+
+    .btn-wine-submit:hover {
+      background: var(--wine-deepest);
+      color: #FFFFFF;
+      transform: translateY(-2px);
     }
 
     /* Botão Flutuante do WhatsApp */
@@ -1104,7 +1240,7 @@
       padding: 12px 20px;
       border-radius: 30px;
       box-shadow: 0 4px 18px rgba(37, 211, 102, 0.4);
-      font-weight: 600;
+      font-weight: 700;
       font-size: 0.9rem;
       transition: all 0.3s ease;
     }
@@ -1123,7 +1259,7 @@
 
     /* Footer Vinho Escuro Nobre */
     footer {
-      background: var(--wine-dark);
+      background: var(--wine-deepest);
       color: var(--text-light);
       padding: 60px 0 30px;
       border-top: 3px solid var(--gold);
@@ -1224,47 +1360,45 @@
 </head>
 <body>
 
-  <!-- Top Bar Institucional -->
+  <!-- Top Bar Institucional com Destaque de Plantão 24h -->
   <div class="top-bar">
     <div class="container">
       <div class="top-bar-info">
-        <span><strong class="top-bar-badge">Atendimento:</strong> Presencial em Caçapava/SP e Online para todo o Brasil</span>
+        <span>Advocacia Cível · Trabalhista · Penal | Caçapava/SP e Online</span>
       </div>
       <div>
-        <span>OAB/SP 510.527 · Segunda a Sexta, 09h às 17h</span>
+        <span class="top-bar-emergency">
+          <span class="pulse-dot"></span>
+          Plantão de Flagrantes 24 Horas
+        </span>
       </div>
     </div>
   </div>
 
-  <!-- Header Principal -->
+  <!-- Header Principal com Fundo Vinho -->
   <header>
     <div class="container nav-container">
       <div class="brand">
-        <!-- Imagem Oficial da Logo (com fallback elegante) -->
-        <img src="logo.jpg" alt="Logo Dra. Nathália Moreira" class="brand-logo-img" onerror="this.style.display='none'; document.getElementById('emblemFallback').style.display='flex';">
-        <div id="emblemFallback" class="brand-emblem-fallback" style="display:none;" aria-label="Logo Dra. Nathália Moreira">
-          <svg viewBox="0 0 100 100" width="30" height="30">
-            <path d="M50 18 L50 78 M32 30 L68 30 M32 30 L22 46 L42 46 Z M68 30 L58 46 L78 46 Z M40 82 L60 82" stroke="#C5A059" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-            <text x="50" y="70" text-anchor="middle" font-family="'Cormorant Garamond', serif" font-size="24" font-weight="700" fill="#FFFFFF">NM</text>
-          </svg>
-        </div>
+        <!-- Logo Oficial Enquadrada -->
+        <img src="logo.jpg" alt="Logo Dra. Nathália Moreira" class="brand-logo-img">
         <div>
           <div class="brand-title">Dra. Nathália Moreira</div>
-          <div class="brand-subtitle">Advocacia & Consultoria Jurídica</div>
+          <div class="brand-subtitle">Advocacia & Consultoria Jurídica · OAB/SP 510.527</div>
         </div>
       </div>
 
-      <!-- Navegação Desktop: Rótulos Concisos e Uniformes em Linha Única -->
+      <!-- Navegação Desktop -->
       <nav class="desktop-nav">
-        <a href="#sobre" class="nav-link">Sobre</a>
+        <a href="#sobre" class="nav-link">Sobre o Escritório</a>
         <a href="#areas" class="nav-link">Áreas de Atuação</a>
         <a href="#diferenciais" class="nav-link">Diferenciais</a>
         <a href="#faq" class="nav-link">Dúvidas</a>
-        <a href="#contato" class="nav-link">Atendimento</a>
-        <!-- Botão WhatsApp com Letras Douradas e Alto Contraste -->
+        <a href="#contato" class="nav-link">Atendimento & Plantão</a>
+        
+        <!-- Botão Dourado com Alto Contraste -->
         <a class="btn-nav-cta" href="https://wa.me/5512981097723" target="_blank" rel="noopener">
           <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
-          Falar no WhatsApp
+          Falar com a Equipe
         </a>
       </nav>
 
@@ -1278,15 +1412,15 @@
   <div class="mobile-drawer" id="mobileDrawer">
     <div class="drawer-content">
       <div class="drawer-header">
-        <span class="brand-subtitle">Menu de Navegação</span>
+        <span>Menu de Navegação</span>
         <button class="drawer-close" id="closeDrawer" aria-label="Fechar menu">&times;</button>
       </div>
       <div class="drawer-nav">
-        <a href="#sobre" class="drawer-link">Sobre</a>
+        <a href="#sobre" class="drawer-link">Sobre o Escritório</a>
         <a href="#areas" class="drawer-link">Áreas de Atuação</a>
         <a href="#diferenciais" class="drawer-link">Diferenciais</a>
         <a href="#faq" class="drawer-link">Dúvidas Frequentes</a>
-        <a href="#contato" class="drawer-link">Atendimento & Localização</a>
+        <a href="#contato" class="drawer-link">Atendimento & Plantão 24h</a>
       </div>
       <a class="btn-nav-cta" style="margin-top:auto; justify-content:center;" href="https://wa.me/5512981097723" target="_blank" rel="noopener">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
@@ -1295,82 +1429,95 @@
     </div>
   </div>
 
-  <!-- Hero Section -->
+  <!-- HERO SECTION: Fundo Vinho Imponente -->
   <section class="hero">
     <div class="container hero-grid">
       <div>
-        <span class="eyebrow">Advocacia Especializada · OAB/SP 510.527</span>
+        <span class="eyebrow">Advocacia Cível · Trabalhista · Penal · OAB/SP 510.527</span>
         <h1>Defesa técnica, presença constante e <em>estratégia jurídica clara.</em></h1>
-        <p class="hero-lead">Com especialização em Direito Penal e Execução Penal, atuando com rigor e proximidade nas áreas Criminal, Cível e Trabalhista. Atendimento presencial em Caçapava/SP e assessoria jurídica online para todo o Brasil.</p>
+        <p class="hero-lead">Atuação estruturada e dedicada nas esferas Cível, Trabalhista e Criminal. Nossa equipe jurídica oferece acompanhamento próximo e transparente em cada etapa, com atendimento presencial em Caçapava/SP e assessoria online para todo o Brasil.</p>
+        
         <div class="hero-actions">
-          <a class="btn btn-wine" href="https://wa.me/5512981097723" target="_blank" rel="noopener">
+          <a class="btn btn-gold" href="https://wa.me/5512981097723" target="_blank" rel="noopener">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
-            Agendar Atendimento
+            Falar com Nossa Equipe
           </a>
-          <a class="btn btn-wine-outline" href="#areas">
+          <a class="btn btn-outline-light" href="#areas">
             Conhecer Áreas de Atuação
           </a>
         </div>
+
         <div class="hero-metrics">
           <div class="metric-card">
             <span class="val">OAB/SP</span>
             <span class="desc">Inscrição Ativa 510.527</span>
           </div>
           <div class="metric-card">
-            <span class="val">Especialista</span>
-            <span class="desc">Penal & Execução Penal</span>
+            <span class="val">3 Áreas</span>
+            <span class="desc">Cível · Trabalhista · Penal</span>
           </div>
           <div class="metric-card">
-            <span class="val">Presencial & Online</span>
-            <span class="desc">Caçapava e todo o Brasil</span>
+            <span class="val" style="color: #FEB2B2;">Plantão 24h</span>
+            <span class="desc">Flagrantes e Custódias</span>
           </div>
         </div>
       </div>
+
       <div>
         <div class="hero-presentation-card">
           <div class="hero-card-header">
-            <h3>Assessoria Jurídica Dedicada</h3>
+            <h3>Assessoria Jurídica Especializada</h3>
             <span>Atuação Preventiva e Contenciosa</span>
           </div>
           <div class="hero-card-body">
+            
+            <!-- Aviso de Plantão 24h -->
+            <div class="hero-alert-24h">
+              <span class="pulse-dot"></span>
+              <span>Plantão 24h para Prisões em Flagrante e Custódias</span>
+            </div>
+
+            <div class="hero-feature-item">
+              <div class="hero-feature-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              </div>
+              <div class="hero-feature-text">
+                <strong>Equipe Atenta e Humanizada</strong>
+                <span>Atendimento ágil pelo escritório, com acompanhamento em cada fase.</span>
+              </div>
+            </div>
+
             <div class="hero-feature-item">
               <div class="hero-feature-icon">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
               </div>
               <div class="hero-feature-text">
-                <strong>Sigilo Absoluto & LGPD</strong>
-                <span>Privacidade resguardada pelo Estatuto da OAB.</span>
+                <strong>Sigilo Absoluto e Confidencialidade</strong>
+                <span>Garantia de proteção legal amparada pelo Estatuto da OAB e LGPD.</span>
               </div>
             </div>
-            <div class="hero-feature-item">
-              <div class="hero-feature-icon">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-              </div>
-              <div class="hero-feature-text">
-                <strong>Atendimento Direto com a Titular</strong>
-                <span>Sem intermediários, com atenção minuciosa ao caso.</span>
-              </div>
-            </div>
+
             <div class="hero-feature-item">
               <div class="hero-feature-icon">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
               </div>
               <div class="hero-feature-text">
-                <strong>Estratégia Processual Clara</strong>
-                <span>Relatórios periódicos em linguagem acessível.</span>
+                <strong>Comunicação Clara e Direta</strong>
+                <span>Informações transparentes sobre o processo, sem termos complicados.</span>
               </div>
             </div>
+
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Seção Sobre -->
+  <!-- SEÇÃO SOBRE O ESCRITÓRIO -->
   <section class="about-section" id="sobre">
     <div class="container about-grid">
       
-      <!-- Moldura com a Logo Oficial NM -->
+      <!-- Moldura com a Logo Oficial NM Enquadrada -->
       <div class="portrait-frame">
         <span class="corner tl"></span>
         <span class="corner tr"></span>
@@ -1378,40 +1525,40 @@
         <span class="corner br"></span>
         
         <div class="portrait-logo-wrapper">
-          <img src="logo.jpg" alt="Logo Nathália Moreira Advogada OAB/SP 510.527">
+          <img src="logo.jpg" alt="Logo Dra. Nathália Moreira Advocacia">
         </div>
 
         <h3>Dra. Nathália Moreira</h3>
-        <p>Advogada Titular · OAB/SP 510.527</p>
-        <span class="portrait-tag">Pós-Graduada em Penal & Execução Penal</span>
+        <p>Advocacia & Consultoria Jurídica · OAB/SP 510.527</p>
+        <span class="portrait-tag">Direito Cível · Trabalhista · Penal</span>
       </div>
 
       <div class="about-text">
-        <span class="eyebrow">Sobre a Profissional</span>
-        <h2>Rigor técnico, escuta atenta e conduta ética.</h2>
-        <p>Formada em Direito e com pós-graduação em <strong>Direito Penal e Execução Penal</strong>, a Dra. Nathália Moreira atua com o compromisso de oferecer suporte jurídico técnico, firme e transparente nas esferas Criminal, Cível e Trabalhista.</p>
-        <p>A condução das demandas é pautada no atendimento direto e humanizado: o cliente tem contato contínuo com a advogada responsável, acompanhando cada movimentação e esclarecendo dúvidas em linguagem clara, sem jargões desnecessários.</p>
+        <span class="eyebrow">Sobre a Banca</span>
+        <h2>Rigor técnico, escuta atenta e atendimento humanizado.</h2>
+        <p>A <strong>Dra. Nathália Moreira</strong> lidera uma banca jurídica comprometida em oferecer assessoria jurídica sólida, transparente e combativa nas esferas <strong>Cível, Trabalhista e Criminal</strong>.</p>
+        <p>A condução das demandas é estruturada para garantir acolhimento e agilidade: nossa equipe jurídica mantém comunicação contínua com os clientes, esclarecendo cada passo processual de forma simples e acessível.</p>
         
         <div class="credentials-list">
           <div class="credential-card">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
             <div>
               <strong>Inscrição Regular na OAB/SP 510.527</strong>
-              <span>Atuação técnica perante a Justiça Estadual, Federal e Juizados Especiais.</span>
+              <span>Atuação técnica perante a Justiça Estadual, Federal, do Trabalho e Juizados Especiais.</span>
             </div>
           </div>
           <div class="credential-card">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
             <div>
-              <strong>Pós-Graduação em Direito Penal e Execução Penal</strong>
-              <span>Especialidade na tutela de garantias fundamentais e no cumprimento de pena.</span>
+              <strong>Equipe Jurídica Dedicada</strong>
+              <span>Suporte contínuo para você tirar dúvidas e acompanhar o andamento do seu caso.</span>
             </div>
           </div>
           <div class="credential-card">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
             <div>
               <strong>Sigilo Profissional Estrito</strong>
-              <span>Garantia de confidencialidade amparada pelo Estatuto da Advocacia e LGPD.</span>
+              <span>Confidencialidade e proteção de dados amparadas pelo Estatuto da Advocacia e LGPD.</span>
             </div>
           </div>
         </div>
@@ -1420,43 +1567,53 @@
     </div>
   </section>
 
-  <!-- Seção Áreas de Atuação -->
+  <!-- SEÇÃO ÁREAS DE ATUAÇÃO -->
   <section class="areas-section" id="areas">
     <div class="container">
       <div class="section-head">
         <span class="eyebrow">Áreas de Prática</span>
         <h2>Atuação Jurídica Estruturada</h2>
-        <p>Diagnóstico detalhado de cada situação para aplicar a medida judicial ou preventiva mais adequada.</p>
+        <p>Atendimento especializado nas três principais esferas do Direito, com estratégia clara para cada caso.</p>
       </div>
+
       <div class="areas-grid">
         
-        <!-- Penal -->
-        <div class="area-card featured">
-          <div class="area-badge">Especialidade</div>
+        <!-- Penal & Execução Penal (Aqui fica a Pós e o Plantão 24h) -->
+        <div class="area-card penal-card">
+          <div class="area-badge badge-urgent">Plantão 24h</div>
           <div>
             <div class="area-icon">
               <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
             </div>
             <h3>Direito Penal & Execução Penal</h3>
-            <p class="area-desc">Defesa criminal combativa e técnica em todas as instâncias, com foco na salvaguarda de direitos constitucionais e acompanhamento penitenciário.</p>
+            <p class="area-desc">
+              Área conduzida com <strong>pós-graduação especializada em Direito Penal e Execução Penal</strong>, assegurando defesa técnica combativa, garantia de direitos constitucionais e acompanhamento penitenciário completo.
+            </p>
+            
+            <div class="penal-flagrante-box">
+              <span class="pulse-dot"></span>
+              <span>Plantão 24h: Atendimento urgente em prisões e custódias</span>
+            </div>
           </div>
+          
           <ul class="service-checklist">
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Audiência de custódia e flagrantes</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> <strong>Audiências de custódia e flagrantes (24h)</strong></li>
             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Pedidos de liberdade e Habeas Corpus</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Progressão de regime e livramento condicional</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Execução Penal: progressão de regime e livramento</li>
             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Remição de pena e cálculo de execução</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Defesa em inquéritos policiais e ações penais</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Acompanhamento em inquéritos policiais e processos</li>
           </ul>
         </div>
 
-        <!-- Cível -->
+        <!-- Cível & Contratos -->
         <div class="area-card">
+          <div class="area-badge">Contratos & Cível</div>
           <div>
             <div class="area-icon">
               <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
             </div>
             <h3>Direito Cível & Contratos</h3>
-            <p class="area-desc">Proteção patrimonial, revisão de negócios jurídicos e reparação de danos em relações contratuais, civis e consumeristas.</p>
+            <p class="area-desc">Proteção patrimonial, segurança jurídica em contratos e reparação de danos em relações civis, contratuais, imobiliárias e de consumo.</p>
           </div>
           <ul class="service-checklist">
             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Elaboração e revisão segura de contratos</li>
@@ -1469,12 +1626,13 @@
 
         <!-- Trabalhista -->
         <div class="area-card">
+          <div class="area-badge">Trabalhista</div>
           <div>
             <div class="area-icon">
               <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
             </div>
             <h3>Direito Trabalhista</h3>
-            <p class="area-desc">Atuação orientada para a garantia e o equilíbrio das relações de trabalho, contemplando interesses de empregados e empregadores.</p>
+            <p class="area-desc">Atuação orientada para a defesa e o equilíbrio dos direitos do trabalho, atendendo demandas de empregados e consultoria para empresas.</p>
           </div>
           <ul class="service-checklist">
             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Reclamatórias trabalhistas e acordos judiciais</li>
@@ -1489,7 +1647,7 @@
     </div>
   </section>
 
-  <!-- Faixa de Citação Institucional Vinho -->
+  <!-- FAIXA DE CITAÇÃO EM VINHO -->
   <section class="quote-band">
     <div class="container">
       <blockquote>
@@ -1499,13 +1657,13 @@
     </div>
   </section>
 
-  <!-- Seção Diferenciais / Compromisso -->
+  <!-- SEÇÃO DIFERENCIAIS -->
   <section class="pillars-section" id="diferenciais">
     <div class="container">
       <div class="section-head">
         <span class="eyebrow">Compromisso Profissional</span>
         <h2>Como Atuamos em Seu Caso</h2>
-        <p>Pilares éticos e técnicos que guiam cada consulta e condução processual.</p>
+        <p>Valores que guiam a condução de cada atendimento e processo judicial.</p>
       </div>
       <div class="pillars-grid">
         <div class="pillar-card">
@@ -1515,8 +1673,8 @@
         </div>
         <div class="pillar-card">
           <div class="pillar-num">02</div>
-          <h3>Atendimento Direto</h3>
-          <p>Seu processo é conduzido e acompanhado diretamente pela advogada titular, garantindo resposta rápida e proximidade durante todas as fases.</p>
+          <h3>Equipe Atenta e Ágil</h3>
+          <p>Nossa equipe jurídica acompanha seu caso de perto, garantindo respostas rápidas, acolhimento e suporte constante em todas as fases do processo.</p>
         </div>
         <div class="pillar-card">
           <div class="pillar-num">03</div>
@@ -1527,7 +1685,7 @@
     </div>
   </section>
 
-  <!-- Seção FAQ -->
+  <!-- SEÇÃO FAQ -->
   <section class="faq-section" id="faq">
     <div class="container">
       <div class="section-head">
@@ -1538,9 +1696,16 @@
       <div class="faq-container">
         
         <details class="faq-item" open>
+          <summary>Como funciona o plantão para prisões em flagrante?</summary>
+          <div class="faq-answer">
+            O plantão criminal funciona <strong>24 horas por dia, 7 dias por semana</strong>. Em casos de prisão em flagrante ou mandados urgentes, nossa equipe atua imediatamente para acompanhar o depoimento em delegacia, assegurar a integridade do preso e atuar na audiência de custódia requerendo a liberdade provisória ou medidas cabíveis.
+          </div>
+        </details>
+
+        <details class="faq-item">
           <summary>Como funciona a primeira consulta jurídica?</summary>
           <div class="faq-answer">
-            A consulta inicial tem como objetivo analisar detalhadamente a documentação e os fatos apresentados pelo cliente. Nessa etapa, a advogada realiza o diagnóstico jurídico da situação, apontando as medidas legais cabíveis, as chances de êxito e os eventuais riscos envolvidos.
+            A consulta inicial tem como objetivo analisar detalhadamente a documentação e os fatos apresentados pelo cliente. Nessa etapa, é realizado o diagnóstico jurídico da situação, apontando as medidas legais cabíveis, as chances de êxito e os eventuais riscos envolvidos.
           </div>
         </details>
 
@@ -1548,13 +1713,6 @@
           <summary>Posso ser atendido de forma 100% online?</summary>
           <div class="faq-answer">
             Sim. O escritório conta com estrutura completa para atendimento virtual via videoconferência ou WhatsApp, além de envio e assinatura eletrônica segura de documentos. Você pode ser atendido de qualquer lugar do Brasil com total comodidade e a mesma segurança do atendimento presencial.
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary>Quais documentos devo ter em mãos para a análise?</summary>
-          <div class="faq-answer">
-            Para o primeiro contato, é recomendável ter documentos pessoais (RG/CPF ou CNH), comprovante de residência e todos os documentos relacionados ao fato (contratos, conversas, notificações, cópia de inquérito ou autos de processo caso já existam).
           </div>
         </details>
 
@@ -1569,7 +1727,7 @@
     </div>
   </section>
 
-  <!-- Seção de Contato e Localização -->
+  <!-- SEÇÃO ATENDIMENTO & PLANTÃO 24H -->
   <section class="contact-section" id="contato">
     <div class="container contact-grid">
       
@@ -1577,14 +1735,26 @@
         <div>
           <span class="eyebrow">Canais de Atendimento</span>
           <h2>Agende Seu Atendimento</h2>
-          <p style="color: var(--text-muted); margin-top: 12px;">Escolha o meio mais conveniente para apresentar sua demanda. O atendimento pode ser realizado de forma presencial no escritório ou totalmente online.</p>
+          <p style="color: var(--text-muted); margin-top: 12px;">Entre em contato com nossa equipe para apresentar sua demanda. Atendemos de forma presencial em Caçapava/SP ou 100% online para todo o Brasil.</p>
+        </div>
+
+        <!-- Destaque Exclusivo de Plantão 24 Horas -->
+        <div class="emergency-hours-card">
+          <div class="badge-24h">
+            <span class="pulse-dot"></span>
+            Plantão Criminal 24 Horas
+          </div>
+          <h4>Prisões em Flagrante & Audiências de Custódia</h4>
+          <p>
+            Atendimento emergencial imediato a qualquer hora do dia ou da noite para delegacias, prisões em flagrante e cumprimento de mandados.
+          </p>
         </div>
 
         <div class="info-group">
           <h4>Endereço do Escritório</h4>
           <p>Travessa Jaú, n.º 67 — Vila Resende<br>Caçapava - SP, CEP 12282-320</p>
           <div style="margin-top: 12px;">
-            <a href="https://www.google.com/maps/search/?api=1&query=Travessa+Jau+67+Vila+Resende+Cacapava+SP+12282-320" target="_blank" rel="noopener" class="btn btn-wine-outline" style="padding: 8px 18px; font-size: 0.85rem;">
+            <a href="https://www.google.com/maps/search/?api=1&query=Travessa+Jau+67+Vila+Resende+Cacapava+SP+12282-320" target="_blank" rel="noopener" class="btn" style="background:var(--wine-light); color:var(--wine-primary); border:1px solid var(--border-wine); padding: 8px 18px; font-size: 0.85rem;">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
               Ver Rota no Google Maps
             </a>
@@ -1592,18 +1762,18 @@
         </div>
 
         <div class="info-group">
-          <h4>Horário de Funcionamento</h4>
+          <h4>Horários de Atendimento</h4>
           <table class="hours-table">
-            <tr><td>Segunda a Sexta-feira</td><td>09:00 às 17:00</td></tr>
-            <tr><td>Sábados e Domingos</td><td>Plantão sob consulta prévia</td></tr>
+            <tr><td>Consultas Regulares (Cível/Trab.)</td><td>Segunda a Sexta, 09:00 às 17:00</td></tr>
+            <tr><td><strong>Flagrantes & Urgências Criminais</strong></td><td><strong style="color: #C53030;">Plantão 24 Horas</strong></td></tr>
           </table>
         </div>
 
         <div class="info-group">
           <h4>Contatos Diretos</h4>
           <p>
-            <strong>WhatsApp:</strong> <a href="https://wa.me/5512981097723" target="_blank" rel="noopener" style="color:var(--wine); font-weight:700;">(12) 98109-7723</a><br>
-            <strong>Instagram:</strong> <a href="https://www.instagram.com/advnathaliamoreira" target="_blank" rel="noopener" style="color:var(--wine); font-weight:700;">@advnathaliamoreira</a>
+            <strong>WhatsApp & Plantão:</strong> <a href="https://wa.me/5512981097723" target="_blank" rel="noopener" style="color:var(--wine-primary); font-weight:700;">(12) 98109-7723</a><br>
+            <strong>Instagram:</strong> <a href="https://www.instagram.com/advnathaliamoreira" target="_blank" rel="noopener" style="color:var(--wine-primary); font-weight:700;">@advnathaliamoreira</a>
           </p>
         </div>
       </div>
@@ -1611,7 +1781,7 @@
       <!-- Formulário de Triagem Sigiloso -->
       <div class="contact-form-box">
         <h3>Mensagem Sigilosa</h3>
-        <p>Envie as informações iniciais para avaliarmos o seu caso com a devida antecedência e discrição.</p>
+        <p>Preencha os campos abaixo para que nossa equipe jurídica possa analisar o seu caso com a devida antecedência e discrição.</p>
         
         <form id="contactForm">
           <div class="form-group">
@@ -1627,7 +1797,7 @@
           <div class="form-group">
             <label for="area">Área de Interesse</label>
             <select id="area" class="form-control">
-              <option value="Direito Penal & Execução Penal">Direito Penal & Execução Penal</option>
+              <option value="Direito Penal / Flagrante 24h">Direito Penal / Flagrante (Urgência 24h)</option>
               <option value="Direito Cível & Contratos">Direito Cível & Contratos</option>
               <option value="Direito Trabalhista">Direito Trabalhista</option>
               <option value="Outro Assunto">Outro Assunto / Não sei informar</option>
@@ -1641,11 +1811,11 @@
 
           <div class="form-privacy-note">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-            <span>Seus dados são protegidos por sigilo profissional e serão utilizados exclusivamente para retorno do contato.</span>
+            <span>Seus dados são protegidos por sigilo profissional e serão utilizados exclusivamente para retorno da nossa equipe.</span>
           </div>
 
-          <button type="submit" class="btn btn-wine" style="width: 100%;">
-            Enviar Solicitação via WhatsApp
+          <button type="submit" class="btn btn-wine-submit">
+            Enviar Mensagem para a Equipe via WhatsApp
           </button>
         </form>
       </div>
@@ -1654,28 +1824,28 @@
   </section>
 
   <!-- Botão Flutuante do WhatsApp -->
-  <a href="https://wa.me/5512981097723?text=Olá,%20Dra.%20Nathália.%20Gostaria%20de%20agendar%20um%20atendimento%20jurídico." class="whatsapp-float" target="_blank" rel="noopener" aria-label="Falar com a Dra. Nathália no WhatsApp">
+  <a href="https://wa.me/5512981097723?text=Olá,%20gostaria%20de%20um%20atendimento%20jurídico%20com%20a%20equipe%20da%20Dra.%20Nathália." class="whatsapp-float" target="_blank" rel="noopener" aria-label="Falar com a equipe no WhatsApp">
     <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
-    <span>Falar no WhatsApp</span>
+    <span>Plantão 24h & WhatsApp</span>
   </a>
 
-  <!-- Footer Vinho Escuro Nobre -->
+  <!-- FOOTER EM VINHO PROFUNDO -->
   <footer>
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
           <div class="brand-title">Dra. Nathália Moreira</div>
-          <div class="brand-subtitle" style="color: rgba(255,255,255,0.65);">Advocacia & Consultoria Jurídica · OAB/SP 510.527</div>
-          <p>Atuação pautada pela combatividade técnica, transparência e sigilo no atendimento às demandas penais, cíveis e trabalhistas.</p>
+          <div class="brand-subtitle" style="color: var(--gold-bright);">Advocacia & Consultoria Jurídica · OAB/SP 510.527</div>
+          <p>Atuação pautada pela combatividade técnica, transparência e sigilo no atendimento às demandas cíveis, trabalhistas e penais.</p>
         </div>
         <div class="footer-col">
           <h5>Navegação</h5>
           <div class="footer-links">
-            <a href="#sobre">Sobre a Advogada</a>
+            <a href="#sobre">Sobre o Escritório</a>
             <a href="#areas">Áreas de Atuação</a>
-            <a href="#diferenciais">Diferenciais Éticos</a>
+            <a href="#diferenciais">Diferenciais</a>
             <a href="#faq">Dúvidas Frequentes</a>
-            <a href="#contato">Atendimento Presencial e Online</a>
+            <a href="#contato">Atendimento & Plantão 24h</a>
           </div>
         </div>
         <div class="footer-col">
@@ -1743,7 +1913,6 @@
           const targetId = href.substring(1);
           const targetElement = document.getElementById(targetId);
           if (targetElement) {
-            // Aguarda o menu fechar para desbloquear o scroll e rolar suavemente até a seção
             setTimeout(() => {
               const headerHeight = 90;
               const elementPosition = targetElement.getBoundingClientRect().top;
