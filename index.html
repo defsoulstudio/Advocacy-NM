@@ -68,7 +68,12 @@
     }
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+    html { 
+      scroll-behavior: smooth; 
+      scroll-padding-top: 80px; 
+      overflow-x: hidden;
+      width: 100%;
+    }
     body {
       background-color: var(--bg-base);
       color: var(--text-main);
@@ -76,6 +81,8 @@
       line-height: 1.65;
       font-size: 16px;
       overflow-x: hidden;
+      width: 100%;
+      position: relative;
     }
 
     a { color: inherit; text-decoration: none; }
@@ -1369,34 +1376,251 @@
       margin-top: 14px;
     }
 
-    /* Responsividade e Ajuste do Menu Breakpoint */
+    /* ==========================================================================
+       RESPONSIVIDADE COMPLETA E IMPECÁVEL PARA CELULAR (MOBILE-FIRST POLISH)
+       ========================================================================== */
     @media (max-width: 1140px) {
       nav.desktop-nav {
         display: none;
       }
       .mobile-menu-btn {
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
       .hero-grid, .about-grid, .areas-grid, .pillars-grid, .contact-grid, .footer-grid {
         grid-template-columns: 1fr;
       }
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 768px) {
+      .container {
+        padding: 0 18px;
+      }
+      
+      /* Top Bar */
       .top-bar-info {
         display: none;
       }
-      .hero-metrics {
-        grid-template-columns: 1fr;
+      .top-bar .container {
+        justify-content: center;
+        text-align: center;
       }
+
+      /* Header */
+      .nav-container {
+        height: 72px;
+      }
+      .brand-long-text {
+        display: none;
+      }
+      .brand-title {
+        font-size: 1.2rem;
+      }
+      .brand-subtitle {
+        font-size: 0.72rem;
+      }
+      .brand-logo-img, .brand-logo-fallback {
+        width: 42px;
+        height: 42px;
+      }
+      .mobile-menu-btn {
+        width: 40px;
+        height: 40px;
+        padding: 6px;
+      }
+
+      /* Hero Section */
+      .hero {
+        padding: 40px 0 50px;
+      }
+      .hero-grid {
+        gap: 34px;
+      }
+      .hero h1 {
+        font-size: clamp(1.85rem, 6.8vw, 2.5rem);
+        line-height: 1.2;
+        margin-bottom: 16px;
+        word-break: normal;
+        overflow-wrap: break-word;
+      }
+      .hero-lead {
+        font-size: 0.98rem;
+        line-height: 1.6;
+        margin-bottom: 28px;
+      }
+      .hero-actions {
+        flex-direction: column;
+        width: 100%;
+        gap: 12px;
+        margin-bottom: 30px;
+      }
+      .hero-actions .btn {
+        width: 100%;
+        padding: 14px 20px;
+        font-size: 0.92rem;
+        justify-content: center;
+      }
+
+      /* Métricas em 3 colunas compactas e alinhadas */
+      .hero-metrics {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+        padding-top: 20px;
+      }
+      .metric-card {
+        padding: 10px 4px;
+        text-align: center;
+      }
+      .metric-card .val {
+        font-size: 1.15rem;
+      }
+      .metric-card .desc {
+        font-size: 0.68rem;
+        margin-top: 2px;
+        line-height: 1.2;
+      }
+
+      /* Card Lateral Hero */
+      .hero-presentation-card {
+        margin-top: 8px;
+      }
+      .hero-card-header {
+        padding: 18px 18px;
+      }
+      .hero-card-body {
+        padding: 20px 16px;
+        gap: 14px;
+      }
+
+      /* Seções Gerais */
+      section {
+        padding: 50px 0;
+      }
+      .section-head {
+        margin-bottom: 36px;
+      }
+      .section-head h2 {
+        font-size: 1.85rem;
+      }
+
+      /* Sobre o Escritório */
+      .portrait-frame {
+        min-height: auto;
+        padding: 28px 16px;
+      }
+      .portrait-logo-wrapper {
+        width: 170px;
+        height: 170px;
+        margin-bottom: 16px;
+      }
+      .portrait-frame h3 {
+        font-size: 1.35rem;
+      }
+      .credentials-list {
+        margin-top: 20px;
+        gap: 12px;
+      }
+      .credential-card {
+        padding: 14px 16px;
+      }
+
+      /* Áreas de Atuação */
+      .areas-grid {
+        gap: 22px;
+      }
+      .area-card {
+        padding: 28px 18px;
+      }
+
+      /* Citação */
+      .quote-band {
+        padding: 50px 18px;
+      }
+      .quote-band blockquote {
+        font-size: 1.35rem;
+      }
+
+      /* Diferenciais */
+      .pillars-grid {
+        gap: 16px;
+      }
+      .pillar-card {
+        padding: 22px 18px;
+      }
+
+      /* FAQ */
+      .faq-item summary {
+        padding: 16px 18px;
+        font-size: 0.96rem;
+      }
+      .faq-answer {
+        padding: 0 18px 18px 18px;
+        font-size: 0.92rem;
+      }
+
+      /* Horários e Contato */
+      .emergency-hours-card {
+        padding: 18px 16px;
+      }
+      .hours-table, .hours-table tbody, .hours-table tr, .hours-table td {
+        display: block;
+        width: 100%;
+      }
+      .hours-table tr {
+        padding: 8px 0;
+        border-bottom: 1px solid var(--border);
+      }
+      .hours-table td {
+        padding: 2px 0;
+        border: none;
+      }
+      .hours-table td:last-child {
+        text-align: left;
+        font-weight: 700;
+      }
+      .contact-form-box {
+        padding: 24px 16px;
+      }
+
+      /* Botão Flutuante do WhatsApp Circular no Mobile */
       .whatsapp-float span {
         display: none;
       }
       .whatsapp-float {
-        padding: 14px;
+        padding: 0;
+        width: 52px;
+        height: 52px;
         border-radius: 50%;
-        bottom: 20px;
-        right: 20px;
+        bottom: 18px;
+        right: 18px;
+        justify-content: center;
+        align-items: center;
+      }
+      .whatsapp-float svg {
+        width: 26px;
+        height: 26px;
+      }
+
+      /* Rodapé */
+      footer {
+        padding: 40px 0 24px;
+      }
+      .footer-grid {
+        gap: 26px;
+        margin-bottom: 24px;
+      }
+      .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+      }
+    }
+
+    @media (max-width: 360px) {
+      .hero-metrics {
+        grid-template-columns: 1fr;
+        gap: 10px;
       }
     }
   </style>
@@ -1438,7 +1662,7 @@
 
         <div>
           <div class="brand-title">Dra. Nathália Moreira</div>
-          <div class="brand-subtitle">Advocacia & Consultoria Jurídica · OAB/SP 510.527</div>
+          <div class="brand-subtitle"><span class="brand-long-text">Advocacia & Consultoria Jurídica · </span>OAB/SP 510.527</div>
         </div>
       </div>
 
