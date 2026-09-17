@@ -12,18 +12,18 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="Dra. Nathália Moreira | Advocacia — OAB/SP 510.527">
   <meta property="og:description" content="Advocacia Cível, Trabalhista e Penal. Plantão 24 Horas para Prisões em Flagrante. Atendimento presencial e online.">
-  <meta property="og:image" content="logo.jpg">
+  <meta property="og:image" content="logo.jpeg">
   <meta property="og:image:type" content="image/jpeg">
   <meta property="og:image:width" content="600">
   <meta property="og:image:height" content="600">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Dra. Nathália Moreira | Advocacia — OAB/SP 510.527">
   <meta name="twitter:description" content="Advocacia Cível, Trabalhista e Penal. Plantão de Flagrantes 24h.">
-  <meta name="twitter:image" content="logo.jpg">
+  <meta name="twitter:image" content="logo.jpeg">
   
   <!-- Favicon -->
-  <link rel="icon" type="image/jpeg" href="logo.jpg">
-  <link rel="apple-touch-icon" href="logo.jpg">
+  <link rel="icon" type="image/jpeg" href="logo.jpeg">
+  <link rel="apple-touch-icon" href="logo.jpeg">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,12 +31,12 @@
   
   <style>
     :root {
-      /* Identidade Principal: Vinho Nobre e Ouro */
-      --wine-deepest: #1B0507;
-      --wine-dark: #27080B;
+      /* Identidade Visual Vinho Nobre e Ouro Clássico */
+      --wine-deepest: #1A0406;
+      --wine-dark: #27070B;
       --wine-primary: #451016;
       --wine-rich: #58161E;
-      --wine-medium: #701D27;
+      --wine-medium: #6E1B25;
       --wine-light: #FBF4F5;
       --wine-tint: #F3E6E8;
       
@@ -52,7 +52,7 @@
       --bg-muted: #F2ECE6;
       
       --text-main: #212529;
-      --text-muted: #585F66;
+      --text-muted: #5A6066;
       --text-light: #FAF8F5;
       --text-on-wine: #F7EFE8;
       
@@ -90,10 +90,12 @@
       line-height: 1.2;
     }
 
+    /* Container Enquadrado e Simétrico */
     .container {
-      max-width: 1180px;
+      max-width: 1160px;
       margin: 0 auto;
-      padding: 0 clamp(16px, 4vw, 36px);
+      padding: 0 clamp(20px, 4vw, 40px);
+      width: 100%;
     }
 
     /* Top Bar Institucional em Vinho Escuro */
@@ -119,7 +121,7 @@
       gap: 8px;
       background: rgba(197, 160, 89, 0.15);
       border: 1px solid var(--gold);
-      padding: 2px 10px;
+      padding: 3px 12px;
       border-radius: 14px;
       font-weight: 700;
       color: var(--gold-bright);
@@ -141,7 +143,7 @@
       100% { opacity: 1; transform: scale(1); }
     }
 
-    /* Header Principal em Vinho Nobre */
+    /* Header Principal com Fundo Vinho e Enquadramento Preciso */
     header {
       position: sticky;
       top: 0;
@@ -158,7 +160,7 @@
       align-items: center;
       justify-content: space-between;
       height: 84px;
-      gap: 16px;
+      gap: 20px;
     }
 
     .brand {
@@ -168,16 +170,31 @@
       flex-shrink: 0;
     }
 
-    /* Logo Oficial */
+    /* Logo Oficial Enquadrada no Header */
     .brand-logo-img {
       width: 50px;
       height: 50px;
       object-fit: cover;
       object-position: center;
       border-radius: var(--radius-sm);
-      background: var(--wine-deepest);
+      background: #4A0E17;
       border: 1.5px solid var(--gold);
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+      display: block;
+    }
+
+    /* Fallback SVG elegante se a imagem não for encontrada */
+    .brand-logo-fallback {
+      width: 50px;
+      height: 50px;
+      border-radius: var(--radius-sm);
+      background: linear-gradient(135deg, var(--wine-primary) 0%, var(--wine-deepest) 100%);
+      border: 1.5px solid var(--gold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+      flex-shrink: 0;
     }
 
     .brand-title {
@@ -200,11 +217,11 @@
       white-space: nowrap;
     }
 
-    /* Navegação Desktop com contraste sobre o fundo vinho */
+    /* Navegação Desktop com Itens Concisos e Uniformes */
     nav.desktop-nav {
       display: flex;
       align-items: center;
-      gap: clamp(14px, 1.8vw, 24px);
+      gap: clamp(14px, 1.8vw, 26px);
       flex-shrink: 0;
     }
 
@@ -213,7 +230,7 @@
       font-weight: 600;
       color: var(--text-on-wine) !important;
       position: relative;
-      padding: 8px 0;
+      padding: 6px 0;
       white-space: nowrap;
       transition: color 0.2s ease;
       display: inline-block;
@@ -226,7 +243,7 @@
     nav.desktop-nav .nav-link::after {
       content: '';
       position: absolute;
-      bottom: 2px;
+      bottom: -2px;
       left: 0;
       width: 0;
       height: 2px;
@@ -238,7 +255,7 @@
       width: 100%;
     }
 
-    /* Botão de Contato com Destaque Dourado/Vinho */
+    /* Botão Dourado de Alto Contraste */
     .btn-nav-cta {
       display: inline-flex !important;
       align-items: center;
@@ -368,7 +385,7 @@
       color: var(--gold-bright);
     }
 
-    /* HERO SECTION EM VINHO NOBRE PRINCIPAL */
+    /* HERO SECTION: Fundo Vinho e Alinhamento Preciso */
     .hero {
       position: relative;
       padding: clamp(64px, 8vw, 100px) 0 clamp(54px, 7vw, 84px);
@@ -516,7 +533,7 @@
       font-weight: 600;
     }
 
-    /* Card Lateral Hero */
+    /* Card Lateral Hero Enquadrado */
     .hero-presentation-card {
       background: #FFFFFF;
       color: var(--text-main);
@@ -555,7 +572,6 @@
       gap: 16px;
     }
 
-    /* Destaque 24h no Card */
     .hero-alert-24h {
       background: #FFF5F5;
       border: 1.5px solid #FEB2B2;
@@ -643,7 +659,7 @@
       font-size: 1.05rem;
     }
 
-    /* SEÇÃO SOBRE O ESCRITÓRIO */
+    /* SEÇÃO SOBRE O ESCRITÓRIO - ENQUADRAMENTO PERFEITO */
     .about-section {
       background: #FFFFFF;
       border-bottom: 1px solid var(--border);
@@ -706,6 +722,35 @@
       object-fit: cover;
       object-position: center;
       display: block;
+    }
+
+    /* Fallback nobre para o quadro se a imagem não carregar */
+    .portrait-emblem-fallback {
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(145deg, var(--wine-primary) 0%, var(--wine-deepest) 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #FFFFFF;
+    }
+
+    .portrait-emblem-initials {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 3.5rem;
+      font-weight: 700;
+      color: var(--gold-bright);
+      line-height: 1;
+    }
+
+    .portrait-emblem-sub {
+      font-size: 0.72rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold-text);
+      font-weight: 700;
+      margin-top: 6px;
     }
 
     .portrait-frame h3 {
@@ -799,6 +844,7 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 28px;
+      align-items: stretch;
     }
 
     .area-card {
@@ -820,7 +866,6 @@
       box-shadow: var(--shadow-md);
     }
 
-    /* Card Penal Especial com Destaque para Flagrante 24h e Pós-Graduação */
     .area-card.penal-card {
       background: linear-gradient(165deg, #FFFFFF 0%, var(--wine-light) 100%);
       border: 2px solid var(--wine-primary);
@@ -874,7 +919,6 @@
       margin-bottom: 18px;
     }
 
-    /* Caixa de Destaque para o Plantão 24h no Penal */
     .penal-flagrante-box {
       background: #FFF5F5;
       border: 1px solid #FEB2B2;
@@ -1081,7 +1125,6 @@
       line-height: 1.6;
     }
 
-    /* Destaque Nitidamente Vermelho/Vinho para Plantão 24h */
     .emergency-hours-card {
       background: linear-gradient(135deg, var(--wine-dark) 0%, var(--wine-primary) 100%);
       color: #FFFFFF;
@@ -1257,7 +1300,7 @@
       fill: currentColor;
     }
 
-    /* Footer Vinho Escuro Nobre */
+    /* Footer Vinho Escuro */
     footer {
       background: var(--wine-deepest);
       color: var(--text-light);
@@ -1326,8 +1369,8 @@
       margin-top: 14px;
     }
 
-    /* Responsividade */
-    @media (max-width: 1024px) {
+    /* Responsividade e Ajuste do Menu Breakpoint */
+    @media (max-width: 1140px) {
       nav.desktop-nav {
         display: none;
       }
@@ -1375,27 +1418,39 @@
     </div>
   </div>
 
-  <!-- Header Principal com Fundo Vinho -->
+  <!-- Header Principal com Fundo Vinho e Alinhamento Perfeito -->
   <header>
     <div class="container nav-container">
       <div class="brand">
-        <!-- Logo Oficial Enquadrada -->
-        <img src="logo.jpg" alt="Logo Dra. Nathália Moreira" class="brand-logo-img">
+        <!-- Imagem Oficial da Logo (com suporte automático a .jpeg, .jpg e .png) -->
+        <img src="logo.jpeg" 
+             alt="Logo Dra. Nathália Moreira" 
+             class="brand-logo-img" 
+             onerror="handleLogoFallback(this)">
+        
+        <!-- Fallback SVG Caso o arquivo não seja encontrado -->
+        <div class="brand-logo-fallback" style="display: none;" aria-label="Logo Dra. Nathália Moreira">
+          <svg viewBox="0 0 100 100" width="30" height="30">
+            <path d="M50 18 L50 78 M32 30 L68 30 M32 30 L22 46 L42 46 Z M68 30 L58 46 L78 46 Z M40 82 L60 82" stroke="#C5A059" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            <text x="50" y="70" text-anchor="middle" font-family="'Cormorant Garamond', serif" font-size="24" font-weight="700" fill="#FFFFFF">NM</text>
+          </svg>
+        </div>
+
         <div>
           <div class="brand-title">Dra. Nathália Moreira</div>
           <div class="brand-subtitle">Advocacia & Consultoria Jurídica · OAB/SP 510.527</div>
         </div>
       </div>
 
-      <!-- Navegação Desktop -->
+      <!-- Navegação Desktop Concisa e Uniforme -->
       <nav class="desktop-nav">
-        <a href="#sobre" class="nav-link">Sobre o Escritório</a>
+        <a href="#sobre" class="nav-link">Sobre</a>
         <a href="#areas" class="nav-link">Áreas de Atuação</a>
         <a href="#diferenciais" class="nav-link">Diferenciais</a>
         <a href="#faq" class="nav-link">Dúvidas</a>
-        <a href="#contato" class="nav-link">Atendimento & Plantão</a>
+        <a href="#contato" class="nav-link">Atendimento</a>
         
-        <!-- Botão Dourado com Alto Contraste -->
+        <!-- Botão Dourado de Alto Contraste -->
         <a class="btn-nav-cta" href="https://wa.me/5512981097723" target="_blank" rel="noopener">
           <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
           Falar com a Equipe
@@ -1471,7 +1526,6 @@
           </div>
           <div class="hero-card-body">
             
-            <!-- Aviso de Plantão 24h -->
             <div class="hero-alert-24h">
               <span class="pulse-dot"></span>
               <span>Plantão 24h para Prisões em Flagrante e Custódias</span>
@@ -1513,7 +1567,7 @@
     </div>
   </section>
 
-  <!-- SEÇÃO SOBRE O ESCRITÓRIO -->
+  <!-- SEÇÃO SOBRE O ESCRITÓRIO: Enquadrado e Simétrico -->
   <section class="about-section" id="sobre">
     <div class="container about-grid">
       
@@ -1525,7 +1579,14 @@
         <span class="corner br"></span>
         
         <div class="portrait-logo-wrapper">
-          <img src="logo.jpg" alt="Logo Dra. Nathália Moreira Advocacia">
+          <img src="logo.jpeg" 
+               alt="Logo Dra. Nathália Moreira Advocacia"
+               onerror="handleLogoFallback(this)">
+          
+          <div class="portrait-emblem-fallback" style="display: none;">
+            <div class="portrait-emblem-initials">NM</div>
+            <div class="portrait-emblem-sub">Advocacia</div>
+          </div>
         </div>
 
         <h3>Dra. Nathália Moreira</h3>
@@ -1578,7 +1639,7 @@
 
       <div class="areas-grid">
         
-        <!-- Penal & Execução Penal (Aqui fica a Pós e o Plantão 24h) -->
+        <!-- Penal & Execução Penal -->
         <div class="area-card penal-card">
           <div class="area-badge badge-urgent">Plantão 24h</div>
           <div>
@@ -1738,7 +1799,6 @@
           <p style="color: var(--text-muted); margin-top: 12px;">Entre em contato com nossa equipe para apresentar sua demanda. Atendemos de forma presencial em Caçapava/SP ou 100% online para todo o Brasil.</p>
         </div>
 
-        <!-- Destaque Exclusivo de Plantão 24 Horas -->
         <div class="emergency-hours-card">
           <div class="badge-24h">
             <span class="pulse-dot"></span>
@@ -1874,6 +1934,21 @@
   </footer>
 
   <script>
+    // Função Inteligente para detectar extensões de logo automaticamente
+    function handleLogoFallback(img) {
+      const candidates = ['logo.jpeg', 'logo.jpg', 'logo.png', 'logo.webp', 'logo.JPG', 'logo.JPEG', 'Logo.jpeg', 'Logo.jpg', 'Logo.png'];
+      let src = img.getAttribute('src');
+      let idx = candidates.indexOf(src);
+      if (idx !== -1 && idx < candidates.length - 1) {
+        img.src = candidates[idx + 1];
+      } else {
+        // Se nenhum arquivo existir, esconde o ícone quebrado e ativa o brasão vetorial
+        img.style.display = 'none';
+        const fallback = img.nextElementSibling;
+        if (fallback) fallback.style.display = 'flex';
+      }
+    }
+
     // Menu Drawer Mobile com Rolagem Fluida Garantida
     const drawer = document.getElementById('mobileDrawer');
     const openBtn = document.getElementById('openDrawer');
@@ -1902,7 +1977,6 @@
       });
     }
 
-    // Ação ao clicar em cada link do menu no celular
     drawerLinks.forEach(link => {
       link.addEventListener('click', (e) => {
         const href = link.getAttribute('href');
